@@ -1,6 +1,6 @@
 #### configuration
 
 VERSION       = 3.8.2
-NAME          = vimperator
+NAME          = vimperator-nightly
 
 include ../common/Makefile
