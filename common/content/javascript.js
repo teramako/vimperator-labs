@@ -637,8 +637,5 @@ const JavaScript = Module("javascript", {
         options.add(["inspectcontentobjects"],
             "Allow completion of JavaScript objects coming from web content. POSSIBLY INSECURE!",
             "boolean", false);
-        options.add(["expandtemplate"],
-            "Expand TemplateLiteral",
-            "boolean", !("XMLList" in window));
     }
 })
