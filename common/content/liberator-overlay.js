@@ -5,7 +5,7 @@
 
 (function () {
     const modules = {};
-    const BASE = "liberator://template/chrome://liberator/content/"
+    const BASE = "chrome://liberator/content/";
 
     modules.modules = modules;
 
