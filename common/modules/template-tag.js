@@ -368,7 +368,7 @@ templateTmpl["+="] = function (self, value) {
 };
 //}}}
 
-function templateXML(portion, args) // {{{
+function templateXML(portion, ...args) // {{{
 {
     var res = "";
 
@@ -564,7 +564,7 @@ templateXML.isEmpty = function (value) {
 };
 //}}}
 
-function templateRaw(portion, args) {
+function templateRaw(portion, ...args) {
     var raw = portion.raw;
     var i = 0, j = args.length, res = raw[0];
     while (i < j) {
@@ -574,7 +574,7 @@ function templateRaw(portion, args) {
     return res;
 }
 
-function templateCooked(portion, args) {
+function templateCooked(portion, ...args) {
     var str = portion.cooked;
     var i = 0, j = args.length, res = str[0];
     while (i < j) {
@@ -584,7 +584,7 @@ function templateCooked(portion, args) {
     return res;
 }
 
-function templateSafeHtml(portion, args) {
+function templateSafeHtml(portion, ...args) {
     var raw = portion.raw;
     var i = 0, j = args.length, res = raw[0];
     while (i < j) {
